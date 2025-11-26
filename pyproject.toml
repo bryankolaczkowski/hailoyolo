@@ -9,7 +9,8 @@ dependencies = [ "loguru",
                  "numpy<2.0",
                  "scipy",
                  "lap",
-                 "cython_bbox" ]
+                 "cython_bbox",
+                 "picamera2" ]
 
 [tool.setuptools]
 include-package-data = true

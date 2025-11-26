@@ -1,10 +1,16 @@
 # hailoyolo
 
-A minor port of the hailort example.
+A minor port of the hailort object detection and tracking example.
+
+## SETUP
+
+You'll probably need to setup an rpi with ai hat+ before trying this.
+Instructions are [here](./RPISETUP.md).
+If you don't want to use the original Hailo examples and only want to use this repo, you can ignore the setup instructions for most of the Hailo example stuff, but that's kinda up to you to figure out what to bypass, if you want to.
 
 ## INSTALL
 
-Use a virtual environment, kay?
+Use a virtual environment, mkay.
 
 ```bash
 python -m pip install git+https://github.com/bryankolaczkowski/hailoyolo.git
