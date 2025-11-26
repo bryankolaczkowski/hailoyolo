@@ -178,7 +178,7 @@ The application supports flexible configuration for how detections and tracking 
 Additional Notes
 ----------------
 
-- The example was only tested with ``HailoRT v4.22.0``
+- The example was only tested with ``HailoRT v4.20.0``
 - The example expects a HEF which contains the HailoRT Postprocess
 - Images are only supported in the following formats: .jpg, .jpeg, .png or .bmp
 - Number of input images should be divisible by batch_size
