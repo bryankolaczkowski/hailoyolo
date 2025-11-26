@@ -1,6 +1,5 @@
 [build-system]
 requires = [ "setuptools", "setuptools-scm[toml]" ]
-build-backend = "setuptools.build.meta"
 
 [project]
 name = "hailoyolo"
@@ -13,7 +12,7 @@ dependencies = [ "loguru",
                  "cython_bbox" ]
 
 [tool.setuptools]
-include_package_data = true
+include-package-data = true
 
 [tool.setuptools.packages.find]
 where = ["src"]

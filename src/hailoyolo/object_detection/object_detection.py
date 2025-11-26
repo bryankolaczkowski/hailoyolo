@@ -49,7 +49,7 @@ def parse_args() -> argparse.Namespace:
         help="Path to label file (e.g., coco.txt)."
     )
 
-    parser.add_artument(
+    parser.add_argument(
         "-c", "--config",
         type=str,
         default=str(Path(__file__).parent.parent / "assets" / "config.json"),
