@@ -22,6 +22,7 @@ sudo reboot now
 mkdir $HOME/pyvenvs
 python -m venv $HOME/pyvenvs/hailobjdet --system-site-packages
 source $HOME/pyvenvs/hailobjdet/bin/activate
+python -m pip install -U pip
 ```
 
 ## INSTALL
