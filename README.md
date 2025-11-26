@@ -44,12 +44,13 @@ Optionally, object tracking across frames can be enabled for video and camera st
 Requirements
 ------------
 
-- hailo_platform==4.22.0
+- hailo_platform==4.20.0
 - loguru
 - opencv-python
 - scipy
 - lap
 - cython_bbox
+- picamera2
 
 Supported Models
 ----------------
@@ -62,13 +63,19 @@ This example only supports detections models that allow HailoRT-Postprocess:
  
 Usage
 -----
-To avoid compatibility issues, it's recommended to have a separate venv from the DFC.
+To avoid compatibility issues, it's recommended to have a separate venv.
 
 0. Install PCIe driver and PyHailoRT
     - Download and install the PCIe driver and PyHailoRT from the Hailo website
     - To install the PyHailoRT whl:
         ```shell script
         pip install hailort-X.X.X-cpXX-cpXX-linux_x86_64.whl
+        ```
+    - On Rpi, this should work:
+        ```shell script
+        sudo apt update
+        sudo apt install hailort-all
+        sudo reboot now
         ```
 
 1. Clone the repository:
