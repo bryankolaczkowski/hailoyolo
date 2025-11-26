@@ -1,0 +1,21 @@
+[build-system]
+requires = [ "setuptools", "setuptools-scm[toml]" ]
+build-backend = "setuptools.build.meta"
+
+[project]
+name = "hailoyolo"
+dynamic = ["version"]
+dependencies = [ "loguru",
+                 "opencv-python",
+                 "numpy<2.0",
+                 "scipy",
+                 "lap",
+                 "cython_bbox" ]
+
+[tool.setuptools]
+include_package_data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools_scm]
