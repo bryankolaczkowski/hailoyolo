@@ -2,11 +2,27 @@
 
 A minor port of the hailort object detection and tracking example.
 
-## SETUP
+## FULL SETUP
 
 You'll probably need to setup an rpi with ai hat+ before trying this.
 Instructions are [here](./RPISETUP.md).
 If you don't want to use the original Hailo examples and only want to use this repo, you can ignore the setup instructions for most of the Hailo example stuff, but that's kinda up to you to figure out what to bypass, if you want to.
+Or you can try the minimal setup.
+
+## MINIMAL SETUP
+
+This is totally untested, but it's probably pretty close to a bare-minimal setup on an updated rpi5 with the AI HAT+ 8L accelerator.
+
+```bash
+sudo apt install hailort-all
+sudo reboot now
+```
+
+```bash
+mkdir $HOME/pyvenvs
+python -m venv $HOME/pyvenvs/hailobjdet --system-site-packages
+source $HOME/pyvenvs/hailobjdet/bin/activate
+```
 
 ## INSTALL
 
